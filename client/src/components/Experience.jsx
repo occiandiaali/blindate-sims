@@ -32,8 +32,9 @@ export const Experience = () => {
         onPointerEnter={() => setOnFloor(true)}
         onPointerLeave={() => setOnFloor(false)}
       >
-        <planeGeometry args={[10, 10]} />
-        <meshStandardMaterial color="#f0f0f0" />
+        <planeGeometry args={[30, 30]} />
+        {/* <meshStandardMaterial color="#f0f0f0" /> */}
+        <meshStandardMaterial color="seagreen" />
       </mesh>
       {characters.map((character) => (
         <AnimatedWoman
